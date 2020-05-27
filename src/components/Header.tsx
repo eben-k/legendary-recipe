@@ -1,11 +1,12 @@
 import React from "react";
+import "./Header.scss";
 
 type HeaderProps = { text: string };
 
 const Header = ({ text }: HeaderProps) => {
   return (
-    <header className="app-header">
-      <h1>{text}</h1>
+    <header className="header">
+      <h1 className="header__text">{text}</h1>
     </header>
   );
 };

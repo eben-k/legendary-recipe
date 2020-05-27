@@ -1,6 +1,6 @@
 import React from "react";
 
-import './App.css';
+import './App.scss';
 import Menu from "./components/Menu";
 import recipeData from "./data/recipes.json";
 

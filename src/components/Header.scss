@@ -1,0 +1,22 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),
+    url(../img/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  &__text {
+    font-size: 4rem;
+    color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      background-color: rgba($color: #fff, $alpha: 0.05);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}
