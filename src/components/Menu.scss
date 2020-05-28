@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-rows: 100vh min-content;
+}
+
+.recipes {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+  margin: 5rem 0;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  color: #54483a;
+}

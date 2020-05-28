@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Recipe from "./Recipe";
+import "./Menu.scss";
 
 type MenuProps = {
   recipes: {
@@ -12,7 +13,7 @@ type MenuProps = {
 
 const Menu = ({ recipes }: MenuProps) => {
   return (
-    <article>
+    <article className="container">
       <Header text="Delicious Recipes" />
       <div className="recipes">
         {recipes.map((recipe, index) => (

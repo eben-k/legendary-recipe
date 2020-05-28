@@ -11,7 +11,7 @@ type RecipeProps = {
 const Recipe = ({ name, ingredients, steps }: RecipeProps) => {
   return (
     <section id={name.toLowerCase().replace(/ /g, "-")}>
-      <h1>{name}</h1>
+      <h2 className="heading-1">{name}</h2>
       <IngredientsList list={ingredients} />
       <Instructions title="Cooking Instructions" steps={steps} />
     </section>

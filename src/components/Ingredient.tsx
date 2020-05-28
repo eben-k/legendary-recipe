@@ -1,4 +1,5 @@
 import React from "react";
+import "./Ingredient.scss";
 
 type IngredientProps = {
   amount: number;
@@ -8,7 +9,7 @@ type IngredientProps = {
 
 const Ingredient = ({ amount, measurement, name }: IngredientProps) => {
   return (
-    <li>
+    <li className="ingredients-list">
       <span className="amount">{amount}</span>
       <span className="measurement">{measurement}</span>
       <span className="name">{name}</span>
